@@ -87,10 +87,18 @@ nav > ul {
   }
 }
 
+/** don't know why this isn't working 
 #Services > ul {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	width: 90%;
 	justify-content: space-around;
 	padding: 50px;
 }
+
+**/
+
+section {
+	font-size: 13rem;
+}
+
