@@ -80,15 +80,19 @@ nav > ul {
   justify-content: space-around;
   font-family: "Bebas Neue"; 
   font-size: 2rem;
-
+	}
+	
 @media (max-width: 650px) {
   nav > ul {
     flex-direction: column;
+	}
   }
-}
+  
+  
+/** } it was a fucking bracket issue!!!!!! **/
 
 /** don't know why this isn't working 
-#Services > ul {
+#Service {
 	display: flex;
 	flex-direction: column;
 	width: 90%;
@@ -98,7 +102,10 @@ nav > ul {
 
 **/
 
-section {
-	font-size: 13rem;
+#services ul {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	justify-content: space-around;
+	padding: 50px;
 }
-
