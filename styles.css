@@ -6,6 +6,8 @@ h1 {
   font-family: 'Honk', sans-serif; 
   font-size: 5rem;
   padding: 0px 5px;
+  display: flex;
+  
 }
 
 * {
@@ -44,8 +46,9 @@ header {
   min-height: 75px;
   padding: 0px 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 /** global class styling **/
@@ -66,7 +69,6 @@ div {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 50px;
   }
   nav li {
     padding-bottom: 5px;
@@ -74,20 +76,27 @@ div {
 }
 
 nav > ul {
-  width: 50vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   font-family: "Bebas Neue"; 
   font-size: 2rem;
+  padding: 0 10px;
 	}
 	
-@media (max-width: 650px) {
+nav li {
+	padding: 0 5px;
+}
+	
+/** removed in favor of wrapping
+@media (max-width: 1341px) {
   nav > ul {
     flex-direction: column;
 	}
   }
   
+**/  
   
 /** } it was a fucking bracket issue!!!!!! **/
 
@@ -103,8 +112,8 @@ nav > ul {
 **/
 
 #services ul {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	
 	width: 90%;
 	justify-content: space-around;
 	padding: 50px;
