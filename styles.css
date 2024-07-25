@@ -61,32 +61,39 @@ div {
 }
 	
 
-@media (max-width: 650px) {
-  nav {
+@media (max-width: 728px) {
+  nav ul {
     margin-top: 10px;
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
+	padding: 0 0;
   }
   nav li {
     padding-bottom: 5px;
   }
+  header {
+	  flex-wrap: nowrap;
+	  
+}
 }
 
-nav > ul {
+/** had to remove the flex-direction from the non-media UL styling, I think it auto defaults to row 
+the padding in the non-media UL is overriding the padding in the media styling, not sure why that is
+**/
+
+nav ul {
   width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   font-family: "Bebas Neue"; 
   font-size: 2rem;
-  padding: 0 10px;
+  align-items: flex-end;
+  /** padding: 0 10px; **/
 	}
 	
 nav li {
-	padding: 0 5px;
+	padding: 0 10px;
+	white-space: nowrap;
 }
 	
 /** removed in favor of wrapping
@@ -112,9 +119,28 @@ nav li {
 **/
 
 #services ul {
-	display: grid;
-	
+	display: flex;
+	flex-wrap: wrap;
 	width: 90%;
 	justify-content: space-around;
-	padding: 50px;
+	padding: 40px;
+	font-size: 1.5rem;
+}
+
+#services li {
+	white-space: nowrap;
+	padding: 10px;
+}
+
+p {
+	padding: 10px;
+}
+
+#divider {
+	height: 5px;
+	background: #fcba03;
+	opacity: 0.5; 
+	margin: 10px;
+	border-radius: 15px;
+	
 }
